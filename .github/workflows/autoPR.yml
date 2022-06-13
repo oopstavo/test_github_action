@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: autoPR
 
 # Controls when the workflow will run
 on:
@@ -19,14 +19,3 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
-      - name: Create Pull Request
-        id: cpr
-        uses: peter-evans/create-pull-request@v4
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-          commit-message: Auto Pull Request
-          title: Your desired title
-          body: Auto-created Pull Request
-          branch: test_cert
-          base: main
