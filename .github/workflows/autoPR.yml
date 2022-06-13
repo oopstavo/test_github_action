@@ -21,4 +21,4 @@ jobs:
           body: Auto-created Pull Request
           branch: ${{ github.ref }}
           base: main
-          reviewers: oopstavo,xihaoliu
+          reviewers: oopstavo
