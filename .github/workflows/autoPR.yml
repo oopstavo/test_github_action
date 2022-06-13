@@ -28,5 +28,5 @@ jobs:
           commit-message: Auto Pull Request
           title: Your desired title
           body: Auto-created Pull Request
-          branch: test_cert
+          branch: ${{ github.ref }}
           base: main
