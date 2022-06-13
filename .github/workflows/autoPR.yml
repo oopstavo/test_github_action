@@ -24,8 +24,3 @@ jobs:
         uses: peter-evans/create-pull-request@v4.0.4
         with:
           token: ${{ secrets.GH_TOKEN }}
-          commit-message: Auto Pull Request
-          title: Your desired title
-          body: Auto-created Pull Request
-          branch: test_cert
-          base: main
