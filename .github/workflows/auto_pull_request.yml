@@ -1,4 +1,4 @@
-name: github_action_auto_pr
+name: auto_pull_request
 on:
   push:
     branches: [ "acc_prod_backup" ]
